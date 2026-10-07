@@ -1,5 +1,16 @@
 {
   "dependencies": {
+    "com.besty.unity-skills": {
+      "version": "file:com.besty.unity-skills",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.0.2",
+        "com.unity.test-framework": "1.1.33",
+        "com.unity.timeline": "1.7.7",
+        "com.unity.ugui": "1.0.0"
+      }
+    },
     "com.code-philosophy.luban": {
       "version": "https://github.com/focus-creative-games/luban_unity.git",
       "depth": 0,
@@ -74,6 +85,13 @@
     },
     "com.unity.ide.vscode": {
       "version": "1.2.5",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.cn"
+    },
+    "com.unity.nuget.newtonsoft-json": {
+      "version": "3.2.1",
       "depth": 1,
       "source": "registry",
       "dependencies": {},

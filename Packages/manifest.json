@@ -48,5 +48,8 @@
         "com.tuyoogame.yooasset"
       ]
     }
+  ],
+  "testables": [
+    "com.besty.unity-skills"
   ]
 }
