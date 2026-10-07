@@ -14,16 +14,22 @@ namespace cfg
 {
 public partial class Tables
 {
+    /// <summary>
+    /// 怪物表
+    /// </summary>
+    public demo.TbMonster TbMonster {get; }
     public demo.Tbitem Tbitem {get; }
 
     public Tables(System.Func<string, JSONNode> loader)
     {
+        TbMonster = new demo.TbMonster(loader("demo_tbmonster"));
         Tbitem = new demo.Tbitem(loader("demo_tbitem"));
         ResolveRef();
     }
     
     private void ResolveRef()
     {
+        TbMonster.ResolveRef(this);
         Tbitem.ResolveRef(this);
     }
 }
